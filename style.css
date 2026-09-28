@@ -70,3 +70,11 @@ td.r{color:var(--ai);white-space:nowrap}
 .kanji span{font-size:14px}
 .kanji small{font-size:12px;color:var(--ink2)}
 .pager{display:flex;justify-content:space-between;gap:12px;margin-top:48px;font-size:14px}
+
+/* 읽기 숨김: 호버·포커스·탭하면 보임 */
+.hv{cursor:help;text-decoration:underline dotted var(--ink2);text-underline-offset:5px;border-radius:3px}
+.hv rt{visibility:hidden;font-family:var(--sans);font-size:.55em;color:var(--ai)}
+.hv:hover rt,.hv:focus-visible rt,.hv.on rt{visibility:visible}
+.hv:focus-visible{outline:2px solid var(--ai);outline-offset:2px}
+.point p,.point li,td{line-height:2.3}
+.hint-yomi{font-size:13px;color:var(--ink2);margin:0 0 6px}
