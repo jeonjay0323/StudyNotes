@@ -79,3 +79,11 @@ td.r{color:var(--ai);white-space:nowrap}
 .point p,.point li,td{line-height:2.3}
 .hint-yomi{font-size:13px;color:var(--ink2);margin:0 0 6px}
 .lv{display:inline-block;font-size:12px;color:var(--ink2);border:1px solid var(--line);border-radius:999px;padding:0 10px;margin:0 0 6px}
+
+/* 소리 내어 읽기 */
+.say-bar{display:flex;gap:6px;margin:10px 0 0}
+.say{display:inline-flex;align-items:center;gap:5px;font:500 13px var(--sans);color:var(--ai);background:var(--ai-soft);border:0;border-radius:999px;padding:5px 12px;cursor:pointer}
+.say:hover{filter:brightness(.96)}
+.say:focus-visible{outline:2px solid var(--ai);outline-offset:2px}
+.sayable{cursor:pointer}
+.sayable:hover{color:var(--ai)}
