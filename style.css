@@ -87,3 +87,5 @@ td.r{color:var(--ai);white-space:nowrap}
 .say:focus-visible{outline:2px solid var(--ai);outline-offset:2px}
 .sayable{cursor:pointer}
 .sayable:hover{color:var(--ai)}
+.jp .sl{font-family:var(--sans);font-size:.7em;color:var(--ink2);opacity:.5;margin:0 .3em}
+.jp .ch{white-space:nowrap}

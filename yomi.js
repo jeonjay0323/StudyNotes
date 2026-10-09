@@ -11,7 +11,7 @@ document.addEventListener('keydown',e=>{if((e.key==='Enter'||e.key===' ')&&e.tar
   pick();ss.addEventListener?.('voiceschanged',pick);
 
   // 후리가나가 있으면 가나로 읽혀서 오독을 막는다
-  const text=el=>{const c=el.cloneNode(true);c.querySelectorAll('.say').forEach(b=>b.remove());c.querySelectorAll('ruby').forEach(r=>{const rt=r.querySelector('rt');r.replaceWith(rt?rt.textContent:r.textContent)});return c.textContent.replace(/[／\/]/g,'、').trim()};
+  const text=el=>{const c=el.cloneNode(true);c.querySelectorAll('.say,.sl').forEach(b=>b.remove());c.querySelectorAll('ruby').forEach(r=>{const rt=r.querySelector('rt');r.replaceWith(rt?rt.textContent:r.textContent)});return c.textContent.replace(/[／\/]/g,'、').trim()};
   const speak=(el,rate)=>{ss.cancel();const u=new SpeechSynthesisUtterance(text(el));u.lang='ja-JP';if(voice)u.voice=voice;u.rate=rate;ss.speak(u)};
 
   const icon='<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z" fill="currentColor"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>';
