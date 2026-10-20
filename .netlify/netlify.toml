@@ -7,7 +7,7 @@ redirects = []
 [functions."*"]
 
 [build]
-publish = "/private/tmp/claude-501/-Users-jeonjei/0e361ee4-d203-4a86-be6e-385bbce5f897/scratchpad/StudyNotes"
+publish = "/private/tmp/claude-501/-Users-jeonjei/8f67fce0-d7b0-4b51-a1d4-bbaa6dc0a9e3/scratchpad/StudyNotes"
 publishOrigin = "default"
 
 [build.environment]
